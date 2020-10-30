@@ -34,11 +34,12 @@ public final class TestPlugin extends JavaPlugin implements Listener {
         if (cmd.getName().equalsIgnoreCase("testperm")) {
             if (args.length == 2) {
                 Player player = Bukkit.getPlayer(args[0]);
+                String playerFriendlyName = player.getName();
                 if (player.hasPermission(args[1])) {
-                    sender.sendMessage(ChatColor.GREEN + "" + player + " has permission " + args[1]);
+                    sender.sendMessage(ChatColor.GREEN + "" + playerFriendlyName + " has permission " + args[1]);
                     return true;
                 } else {
-                    sender.sendMessage(ChatColor.RED + "" + player + " does not have permission " + args[1]); }
+                    sender.sendMessage(ChatColor.RED + "" + playerFriendlyName + " does not have permission " + args[1]); }
                     return true;
             }
         }
