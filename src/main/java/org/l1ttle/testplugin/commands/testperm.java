@@ -13,7 +13,7 @@ public class testperm extends Command {
 
     public boolean execute(CommandSender sender, String commandLabel, String[] args) {
 
-        if (sender.hasPermission(args) {
+        if (sender.hasPermission(args)) {
             sender.sendMessage("You have permission " + args);
             return true; }
 
