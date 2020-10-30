@@ -11,4 +11,4 @@ commands:
     description: Tests if the sender has a permission
     permission: testplugin.testperm
     permission-message: You do not have permission to use this command!
-    usage: /<command> <permission>
+    usage: /<command> <player> <permission>
