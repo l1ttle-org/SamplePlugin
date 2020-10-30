@@ -33,4 +33,4 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: test-plugin
-        path: target/*.jar
+        path: target/test-plugin*.jar
