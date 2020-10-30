@@ -32,5 +32,5 @@ jobs:
     - name: Copy artifacts
       uses: actions/upload-artifact@master
       with:
-        name: Plugin jars
+        name: test-plugin
         path: target/*.jar
