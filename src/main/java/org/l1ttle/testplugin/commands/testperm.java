@@ -13,16 +13,12 @@ public class testperm extends Command {
 
     public boolean execute(CommandSender sender, String commandLabel, String[] args) {
 
-        if (args.length != 1) {
-            sender.sendMessage("Syntax: /testperm <permission>");
-            return false; }
-
-        else if (sender.hasPermission(Arrays.toString(args))) {
-            sender.sendMessage("You have permission " + Arrays.toString(args));
+        if (sender.hasPermission(args) {
+            sender.sendMessage("You have permission " + args);
             return true; }
 
         else {
-            sender.sendMessage("You do not have permission " + Arrays.toString(args));
+            sender.sendMessage("You do not have permission " + args);
             return false; }
         }
     }
