@@ -1,4 +1,4 @@
-package io.github.l1ttle_org.SamplePlugin;
+package io.github.l1ttle_org.sampleplugin;
 
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
