@@ -29,14 +29,16 @@ public final class SamplePlugin extends JavaPlugin implements Listener {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (args.length == 2) {
-            Player player = Bukkit.getPlayer(args[0]);
-            String playerFriendlyName = player.getName();
+            final Player player = Bukkit.getPlayer(args[0]);
+            final String playerFriendlyName = player.getName();
             if (player.hasPermission(args[1])) {
                 sender.sendMessage(ChatColor.GREEN + "" + playerFriendlyName + " has permission " + args[1]);
                 return true;
             } else {
                 sender.sendMessage(ChatColor.RED + "" + playerFriendlyName + " does not have permission " + args[1]);
             }
-            return true; }
-        return false; }
+            return true;
+        }
+        return false;
     }
+}
