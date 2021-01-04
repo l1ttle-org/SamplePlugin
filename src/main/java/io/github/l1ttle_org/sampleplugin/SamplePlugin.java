@@ -1,6 +1,7 @@
 package io.github.l1ttle_org.sampleplugin;
 
 import java.util.logging.Level;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -22,7 +23,8 @@ public final class SamplePlugin extends JavaPlugin implements Listener {
         // Plugin shutdown logic
         getLogger().log(Level.INFO, "Pong! We are disabling");
         if (!getServer().isStopping()) {
-            getLogger().log(Level.SEVERE, "Reloading is bad. If you have any problems with your server, please use /stop"); }
+            getLogger().log(Level.SEVERE, "Reloading is bad. If you have any problems with your server, please use /stop");
+        }
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -33,9 +35,8 @@ public final class SamplePlugin extends JavaPlugin implements Listener {
                 sender.sendMessage(ChatColor.GREEN + "" + playerFriendlyName + " has permission " + args[1]);
                 return true;
             } else {
-                sender.sendMessage(ChatColor.RED + "" + playerFriendlyName + " does not have permission " + args[1]); }
-                return true;
-        }
+                sender.sendMessage(ChatColor.RED + "" + playerFriendlyName + " does not have permission " + args[1]);
+            }
+            return true; }
+        return false; }
     }
-return false; }
-}
