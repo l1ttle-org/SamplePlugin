@@ -4,7 +4,7 @@ main: io.github.l1ttle_org.sampleplugin.SamplePlugin
 api-version: 1.13
 authors: [ l1ttle ]
 description: Ping, pong!
-website: https://github.com/l1ttle-org/test-plugin
+website: https://github.com/l1ttle-org/SamplePlugin
 
 commands:
   testperm:

@@ -1,4 +1,4 @@
-name: Build test-plugin
+name: Build SamplePlugin
 
 on:
   push:
@@ -32,5 +32,5 @@ jobs:
     - name: Copy artifacts
       uses: actions/upload-artifact@master
       with:
-        name: test-plugin
-        path: target/test-plugin*.jar
+        name: SamplePlugin
+        path: target/SamplePlugin*.jar

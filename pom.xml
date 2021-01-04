@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.l1ttle_org.test-plugin</groupId>
-    <artifactId>test-plugin</artifactId>
+    <groupId>io.github.l1ttle_org.sampleplugin</groupId>
+    <artifactId>SamplePlugin</artifactId>
     <version>1.0.2</version>
     <packaging>jar</packaging>
 
-    <name>Test Plugin</name>
+    <name>Sample Plugin</name>
 
     <description>Ping, pong!</description>
     <properties>
