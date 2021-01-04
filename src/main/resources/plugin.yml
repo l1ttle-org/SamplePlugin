@@ -1,6 +1,6 @@
 name: TestPlugin
 version: ${project.version}
-main: org.l1ttle.testplugin.TestPlugin
+main: io.github.l1ttle_org.sampleplugin.SamplePlugin
 api-version: 1.13
 authors: [ l1ttle ]
 description: Ping, pong!
