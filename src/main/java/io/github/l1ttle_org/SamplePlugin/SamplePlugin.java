@@ -1,4 +1,4 @@
-package org.l1ttle.testplugin;
+package io.github.l1ttle_org.SamplePlugin;
 
 import java.util.logging.Level;
 import org.bukkit.Bukkit;
@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class TestPlugin extends JavaPlugin implements Listener {
+public final class SamplePlugin extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
@@ -26,17 +26,16 @@ public final class TestPlugin extends JavaPlugin implements Listener {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (cmd.getName().equalsIgnoreCase("testperm")) {
-            if (args.length == 2) {
-                Player player = Bukkit.getPlayer(args[0]);
-                String playerFriendlyName = player.getName();
-                if (player.hasPermission(args[1])) {
-                    sender.sendMessage(ChatColor.GREEN + "" + playerFriendlyName + " has permission " + args[1]);
-                    return true;
-                } else {
-                    sender.sendMessage(ChatColor.RED + "" + playerFriendlyName + " does not have permission " + args[1]); }
-                    return true;
-            }
+        if (args.length == 2) {
+            Player player = Bukkit.getPlayer(args[0]);
+            String playerFriendlyName = player.getName();
+            if (player.hasPermission(args[1])) {
+                sender.sendMessage(ChatColor.GREEN + "" + playerFriendlyName + " has permission " + args[1]);
+                return true;
+            } else {
+                sender.sendMessage(ChatColor.RED + "" + playerFriendlyName + " does not have permission " + args[1]); }
+                return true;
         }
-    return false; }
+    }
+return false; }
 }
